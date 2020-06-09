@@ -12,10 +12,10 @@ def insert_item(item, type_):
     '''
     插入数据到mongodb，item为要插入的数据，type_用来选择collection
     '''
-    databaseIp='你的IP'
+    databaseIp='127.0.0.1'
     databasePort=27017
     client = MongoClient(databaseIp, databasePort)
-    mongodbName = '你数据库的名字'
+    mongodbName = 'mongodb'
     db = client[mongodbName]
     if type_ == 'dxy_map':
         # 更新插入
@@ -85,9 +85,9 @@ def main():
 
 
 if __name__ == '__main__':
-    # dxy_spider()
-    # baidu_spider()
-    schedule.every().day.at("12:00").do(main)
-    while True:
-        schedule.run_pending()
-        sleep(10)
+    dxy_spider()
+    baidu_spider()
+    # schedule.every().day.at("12:00").do(main)
+    # while True:
+    #     schedule.run_pending()
+    #     sleep(10)

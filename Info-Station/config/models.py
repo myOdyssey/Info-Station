@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from info.models import Post
 # Create your models here.
 
+
 class Link(models.Model):
     STATUS_NORMAL = 1
     STATUS_DELETE = 0
@@ -25,8 +26,10 @@ class Link(models.Model):
     class Meta:
         verbose_name = verbose_name_plural = "友链"
         ordering = ['-weight', ]
+
     def __str__(self):
         return self.title
+
 
 class SideBar(models.Model):
     STATUS_SHOW = 1
@@ -57,6 +60,7 @@ class SideBar(models.Model):
 
     class Meta:
         verbose_name = verbose_name_plural = "侧边栏"
+
     def __str__(self):
         return self.title
 

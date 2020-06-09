@@ -14,7 +14,7 @@
     <h1>{{post.title}}</h1>
     <div>
         <span>分类：<a href="{% url 'category-list' post.category_id %}" style="color:black">{{ post.category.name }}</a></span>
-{#        <span>作者：<a href="{% url 'author' post.owner_id %}"></a>{{post.owner.username}}</span>#}
+{#      <span>作者：<a href="{% url 'author' post.owner_id %}"></a>{{post.owner.username}}</span>#}
     </div>
     <hr/>
     <p>
@@ -23,9 +23,7 @@
     {% endautoescape %}
     </p>
     {% endif %}
-          <div class="row">
-            <div class="col-9 post-list">
-
-            </div>
-        </div>
+    <div class="row">
+        <div class="col-9 post-list"></div>
+    </div>
 {%endblock%}

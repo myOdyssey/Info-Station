@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>实时动态</title>
+    <title>疫情统计分析</title>
     <script type="text/javascript" src="/static/js/echarts.min.js"></script>
 
     <script type="text/javascript" src="/static/js/echarts-wordcloud.min.js"></script>
@@ -60,7 +60,7 @@
 {#                  <a class="nav-link" href="{% url 'category-list' cate.id %}">{{ cate.name }}</a>#}
 {#              </li>#}
 {#            {% endfor %}#}
-            <li  class="nav-item active"><a class="nav-link" href="/" >一颗赛艇 <span class="sr-only">(current)</span></a></a></li>
+            <li  class="nav-item active"><a class="nav-link" href="/" >首页 <span class="sr-only">(current)</span></a></a></li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url "yiqing" %}">战况</a>
             </li>
@@ -134,15 +134,14 @@
             </nav>
 
             <div style="height: 60px; background: rgb(0,0,0); color: rgb(250, 250, 250); width: 100%; min-width: 1500px;padding: 24px 50px;font-size: 14px;">
-                    <div class="container">
-                        <div style="float: left;">
-                        CopyRight © 一颗赛艇    | <a href="http://www.beian.miit.gov.cn/" style="color:white">粤ICP备19149331号-3</a>
+                <div class="container">
+                    <div style="float: left;">
+                        COVID19 疫情统计分析
                     </div>
                     <div style="float: right;">
-                        广东医科大学-网站设计大赛-网设作品
-
+                        数据库设计
                     </div>
-            </div>
+                </div>
             </div>
 
 

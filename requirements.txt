@@ -1,4 +1,4 @@
-django==2.0.9
+django==2.*
 gunicorn==19.8.1
 uWSGI==2.0.17
 django-ckeditor==5.4.0
@@ -17,6 +17,6 @@ django-pure-pagination==0.3.0
 django-ranged-response==0.2.0
 django-reversion==2.0.12
 djangorestframework==3.8.2
-pyecharts==0.1.9.4
+pyecharts==1.7.1
 pymongo
 schedule

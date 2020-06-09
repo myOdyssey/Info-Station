@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = '123456'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'ckeditor',
     'ckeditor_uploader',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -90,9 +89,9 @@ WSGI_APPLICATION = 'InfoStation.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'InfoStation',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'covsite',
+        'USER': 'root',
+        'PASSWORD': '123456',
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'CONN_MAX_AGE': 5*60,
@@ -146,8 +145,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR,"static")
 
-XADMIN_TITLE = '一颗赛艇管理后台'
-XADMIN_FOOTER_TITLE = 'power by 一颗赛艇'
+XADMIN_TITLE = '管理后台'
+XADMIN_FOOTER_TITLE = 'COVID19疫情统计分析系统'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static/")
@@ -162,8 +161,8 @@ CKEDITOR_CONFIGS = {
         'extraPlugins': 'codesnippet',
     },
 }
-#服务端接收的文件应该放的地方
+# 服务端接收的文件应该放的地方
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 CKEDITOR_UPLOAD_PATH = "article_images"
