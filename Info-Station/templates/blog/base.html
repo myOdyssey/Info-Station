@@ -83,7 +83,7 @@
     </div>
     <footer class="footer" style="position: relative">
         {% block footer %}
-            <nav class="nav category">
+            <nav class="nav category" style="position: relative">
             {% for cate in categories %}
             <a href="{% url 'category-list' cate.id %}" class="nav-link">{{ cate.name }}</a>
             {% endfor %}
