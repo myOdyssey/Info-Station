@@ -18,16 +18,16 @@ class IndexView(TemplateView):
 
 
 class CommonViewMixin:
-    def get_context_data(self,**kwargs):
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context.update({
-            'sidebars':SideBar.get_all(),
+            'sidebars': SideBar.get_all(),
         })
         context.update(Category.get_navs())
         return context
 
 
-class ArticleView(CommonViewMixin,ListView):
+class ArticleView(CommonViewMixin, ListView):
     queryset = Post.objects.filter(status=Post.STATUS_NORMAL) \
         .select_related('owner') \
         .select_related('category')
