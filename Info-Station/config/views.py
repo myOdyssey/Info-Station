@@ -31,7 +31,7 @@ def get_data(type_):
     databasePort = 27017
     # 连接mongodb
     client = MongoClient(databaseIp, databasePort)
-    mongodbName = 'mongodb'
+    mongodbName = 'test'
     db = client[mongodbName]
     if type_ == 'map':
         collection = db.dxy_map

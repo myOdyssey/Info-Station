@@ -89,13 +89,13 @@ WSGI_APPLICATION = 'InfoStation.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'covsite',
-        'USER': 'root',
-        'PASSWORD': '123456',
+        'NAME': 'test',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': 3306,
         'CONN_MAX_AGE': 5*60,
-        'OPTIONS': {'charset': 'utf8mb4'}
+        'OPTIONS': {'charset': 'utf8mb4' , 'isolation_level': None}
     }
 }
 

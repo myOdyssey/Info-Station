@@ -15,7 +15,7 @@ def insert_item(item, type_):
     databaseIp='127.0.0.1'
     databasePort=27017
     client = MongoClient(databaseIp, databasePort)
-    mongodbName = 'mongodb'
+    mongodbName = 'test'
     db = client[mongodbName]
     if type_ == 'dxy_map':
         # 更新插入
