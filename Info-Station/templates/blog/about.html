@@ -40,6 +40,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'about' %}">关于</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'links' %}">友链</a>
+                </li>
             </ul>
             <form class="form-inline" action='/search/' method='GET'>
             <input class="form-control mr-sm-2" type="search" name="keyword" placeholder="Search" aria-label="Search" value="{{ keyword }}">
