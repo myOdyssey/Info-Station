@@ -12,8 +12,8 @@ def insert_item(item, type_):
     '''
     插入数据到mongodb，item为要插入的数据，type_用来选择collection
     '''
-    databaseIp='127.0.0.1'
-    databasePort=27017
+    databaseIp = '127.0.0.1'
+    databasePort = 27017
     client = MongoClient(databaseIp, databasePort)
     mongodbName = 'mongodb'
     db = client[mongodbName]
